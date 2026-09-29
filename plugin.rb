@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# name: ISBF-Repost
+# name: isbf-repost
 # about: Records quote repost relationships and exposes visibility-aware counts.
 # version: 0.1.0
 # authors: ISBF Lab

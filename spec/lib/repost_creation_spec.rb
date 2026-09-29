@@ -11,7 +11,7 @@ RSpec.describe "ISBF repost creation" do
       PostCreator.create!(
         user,
         raw: "My note\n\n[quote=\"#{source_topic.user.username}, post:1, topic:#{source_topic.id}\"]source[/quote]",
-        title: "My quote repost",
+        title: "My quote repost from a campus source",
         isbf_repost_source_topic_id: source_topic.id,
       )
 
@@ -29,7 +29,7 @@ RSpec.describe "ISBF repost creation" do
       PostCreator.create!(
         user,
         raw: "Quote #{index}",
-        title: "Repost #{index}",
+        title: "Campus quote repost number #{index}",
         isbf_repost_source_topic_id: source_topic.id,
       )
     end
