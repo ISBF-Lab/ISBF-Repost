@@ -9,10 +9,10 @@
 
 enabled_site_setting :isbf_repost_enabled
 
-add_permitted_post_create_param(:isbf_repost_source_topic_id, :integer)
-allow_new_queued_post_payload_attribute(:isbf_repost_source_topic_id)
-
 after_initialize do
+  add_permitted_post_create_param(:isbf_repost_source_topic_id, :integer)
+  allow_new_queued_post_payload_attribute(:isbf_repost_source_topic_id)
+
   module ::IsbfRepost
     PLUGIN_NAME = "isbf-repost"
 
